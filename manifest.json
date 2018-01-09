@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "It's All Text!",
+  "version": "2.0",
+
+  "description": "Edit text using your favorite editor!",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["itsalltext.js"],
+      "css": ["itsalltext.css"]
+    }
+  ]
+
+}
